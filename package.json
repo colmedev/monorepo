@@ -1,0 +1,28 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --parallel --filter \"./apps/*\" dev",
+    "dev:backend": "pnpm --filter backend start:dev",
+    "dev:frontend": "pnpm --filter frontend dev",
+    "backend": "pnpm start --filter backend",
+    "frontend": "pnpm --filter frontend dev",
+    "build": "pnpm --filter \"./apps/*\" build",
+    "install:all": "pnpm install"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^2.0.40",
+    "@ai-sdk/react": "3.0.0-beta.105",
+    "ai": "6.0.0-beta.105",
+    "dotenv": "^17.2.3",
+    "streamdown": "^1.6.7"
+  }
+}
