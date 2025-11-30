@@ -98,6 +98,7 @@ async function main() {
       topic: 'test-topic',
       messages: [
         { value: '¡hello world! ' + new Date().toISOString() },
+        { value: JSON.stringify({ id: 1, nombre: 'Prueba', timestamp: new Date() }) }
       ],
     })
     console.log('✅ Message sent')
