@@ -10,19 +10,22 @@ importers:
     dependencies:
       '@ai-sdk/google':
         specifier: ^2.0.40
-        version: 2.0.40(zod@4.1.12)
+        version: 2.0.40(zod@4.1.13)
       '@ai-sdk/react':
         specifier: 3.0.0-beta.105
-        version: 3.0.0-beta.105(react@19.2.0)(zod@4.1.12)
+        version: 3.0.0-beta.105(react@19.2.0)(zod@4.1.13)
       ai:
         specifier: 6.0.0-beta.105
-        version: 6.0.0-beta.105(zod@4.1.12)
+        version: 6.0.0-beta.105(zod@4.1.13)
       dotenv:
         specifier: ^17.2.3
         version: 17.2.3
       streamdown:
         specifier: ^1.6.7
         version: 1.6.7(@types/mdast@4.0.4)(micromark-util-types@2.0.2)(micromark@4.0.2)(react@19.2.0)(unified@11.0.5)
+      zod:
+        specifier: ^4.1.13
+        version: 4.1.13
     devDependencies:
       typescript:
         specifier: ^5.7.3
@@ -32,10 +35,10 @@ importers:
     dependencies:
       '@ai-sdk/openai':
         specifier: ^2.0.69
-        version: 2.0.69(zod@4.1.12)
+        version: 2.0.69(zod@4.1.13)
       '@ai-sdk/react':
         specifier: 3.0.0-beta.105
-        version: 3.0.0-beta.105(react@19.2.0)(zod@4.1.12)
+        version: 3.0.0-beta.105(react@19.2.0)(zod@4.1.13)
       '@nestjs/common':
         specifier: ^11.0.1
         version: 11.1.8(reflect-metadata@0.2.2)(rxjs@7.8.2)
@@ -47,7 +50,7 @@ importers:
         version: 11.1.8(@nestjs/common@11.1.8(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.8)
       ai:
         specifier: 6.0.0-beta.105
-        version: 6.0.0-beta.105(zod@4.1.12)
+        version: 6.0.0-beta.105(zod@4.1.13)
       express:
         specifier: ^5.1.0
         version: 5.1.0
@@ -135,10 +138,10 @@ importers:
     dependencies:
       '@ai-sdk/react':
         specifier: 3.0.0-beta.105
-        version: 3.0.0-beta.105(react@19.2.0)(zod@4.1.12)
+        version: 3.0.0-beta.105(react@19.2.0)(zod@4.1.13)
       ai:
         specifier: ^5.0.98
-        version: 5.0.98(zod@4.1.12)
+        version: 5.0.98(zod@4.1.13)
       axios:
         specifier: ^1.13.2
         version: 1.13.2
@@ -4472,57 +4475,57 @@ packages:
     resolution: {integrity: sha512-U/PBtDf35ff0D8X8D0jfdzHYEPFxAI7jJlxZXwCSez5M3190m+QobIfh+sWDWSHMCWWJN2AWamkegn6vr6YBTw==}
     engines: {node: '>=18'}
 
-  zod@4.1.12:
-    resolution: {integrity: sha512-JInaHOamG8pt5+Ey8kGmdcAcg3OL9reK8ltczgHTAwNhMys/6ThXHityHxVV2p3fkw/c+MAvBHFVYHFZDmjMCQ==}
+  zod@4.1.13:
+    resolution: {integrity: sha512-AvvthqfqrAhNH9dnfmrfKzX5upOdjUVJYFqNSlkmGf64gRaTzlPwz99IHYnVs28qYAybvAlBV+H7pn0saFY4Ig==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
 snapshots:
 
-  '@ai-sdk/gateway@2.0.0-beta.57(zod@4.1.12)':
+  '@ai-sdk/gateway@2.0.0-beta.57(zod@4.1.13)':
     dependencies:
       '@ai-sdk/provider': 3.0.0-beta.16
-      '@ai-sdk/provider-utils': 4.0.0-beta.33(zod@4.1.12)
+      '@ai-sdk/provider-utils': 4.0.0-beta.33(zod@4.1.13)
       '@vercel/oidc': 3.0.5
-      zod: 4.1.12
+      zod: 4.1.13
     transitivePeerDependencies:
       - '@valibot/to-json-schema'
       - arktype
       - effect
 
-  '@ai-sdk/gateway@2.0.13(zod@4.1.12)':
+  '@ai-sdk/gateway@2.0.13(zod@4.1.13)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.17(zod@4.1.12)
+      '@ai-sdk/provider-utils': 3.0.17(zod@4.1.13)
       '@vercel/oidc': 3.0.5
-      zod: 4.1.12
+      zod: 4.1.13
 
-  '@ai-sdk/google@2.0.40(zod@4.1.12)':
+  '@ai-sdk/google@2.0.40(zod@4.1.13)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.17(zod@4.1.12)
-      zod: 4.1.12
+      '@ai-sdk/provider-utils': 3.0.17(zod@4.1.13)
+      zod: 4.1.13
 
-  '@ai-sdk/openai@2.0.69(zod@4.1.12)':
+  '@ai-sdk/openai@2.0.69(zod@4.1.13)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.17(zod@4.1.12)
-      zod: 4.1.12
+      '@ai-sdk/provider-utils': 3.0.17(zod@4.1.13)
+      zod: 4.1.13
 
-  '@ai-sdk/provider-utils@3.0.17(zod@4.1.12)':
+  '@ai-sdk/provider-utils@3.0.17(zod@4.1.13)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
       '@standard-schema/spec': 1.0.0
       eventsource-parser: 3.0.6
-      zod: 4.1.12
+      zod: 4.1.13
 
-  '@ai-sdk/provider-utils@4.0.0-beta.33(zod@4.1.12)':
+  '@ai-sdk/provider-utils@4.0.0-beta.33(zod@4.1.13)':
     dependencies:
       '@ai-sdk/provider': 3.0.0-beta.16
       '@standard-schema/spec': 1.0.0
       eventsource-parser: 3.0.6
-      zod: 4.1.12
+      zod: 4.1.13
 
   '@ai-sdk/provider@2.0.0':
     dependencies:
@@ -4532,10 +4535,10 @@ snapshots:
     dependencies:
       json-schema: 0.4.0
 
-  '@ai-sdk/react@3.0.0-beta.105(react@19.2.0)(zod@4.1.12)':
+  '@ai-sdk/react@3.0.0-beta.105(react@19.2.0)(zod@4.1.13)':
     dependencies:
-      '@ai-sdk/provider-utils': 4.0.0-beta.33(zod@4.1.12)
-      ai: 6.0.0-beta.105(zod@4.1.12)
+      '@ai-sdk/provider-utils': 4.0.0-beta.33(zod@4.1.13)
+      ai: 6.0.0-beta.105(zod@4.1.13)
       react: 19.2.0
       swr: 2.3.6(react@19.2.0)
       throttleit: 2.1.0
@@ -6106,21 +6109,21 @@ snapshots:
 
   acorn@8.15.0: {}
 
-  ai@5.0.98(zod@4.1.12):
+  ai@5.0.98(zod@4.1.13):
     dependencies:
-      '@ai-sdk/gateway': 2.0.13(zod@4.1.12)
+      '@ai-sdk/gateway': 2.0.13(zod@4.1.13)
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.17(zod@4.1.12)
+      '@ai-sdk/provider-utils': 3.0.17(zod@4.1.13)
       '@opentelemetry/api': 1.9.0
-      zod: 4.1.12
+      zod: 4.1.13
 
-  ai@6.0.0-beta.105(zod@4.1.12):
+  ai@6.0.0-beta.105(zod@4.1.13):
     dependencies:
-      '@ai-sdk/gateway': 2.0.0-beta.57(zod@4.1.12)
+      '@ai-sdk/gateway': 2.0.0-beta.57(zod@4.1.13)
       '@ai-sdk/provider': 3.0.0-beta.16
-      '@ai-sdk/provider-utils': 4.0.0-beta.33(zod@4.1.12)
+      '@ai-sdk/provider-utils': 4.0.0-beta.33(zod@4.1.13)
       '@opentelemetry/api': 1.9.0
-      zod: 4.1.12
+      zod: 4.1.13
     transitivePeerDependencies:
       - '@valibot/to-json-schema'
       - arktype
@@ -9579,6 +9582,6 @@ snapshots:
 
   yoctocolors-cjs@2.1.3: {}
 
-  zod@4.1.12: {}
+  zod@4.1.13: {}
 
   zwitch@2.0.4: {}

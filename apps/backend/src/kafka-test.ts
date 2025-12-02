@@ -90,17 +90,25 @@ const kafka = new Kafka({
 const producer = kafka.producer();
 
 async function main() {
+  const topicMessages = [
+    {
+      topic: "topic-a",
+      messages: [{ key: "key-1", value: "hello topic-a" }]
+    },
+    {
+      topic: "topic-b",
+      messages: [{ key: "key-2", value: "hello topic-b" }]
+    },
+    {
+      topic: "topic-c",
+      messages: [{ key: "key-3", value: "hello topic-c" }]
+    }
+  ]
   try {
     console.log('🚀 Connecting producer...')
     await producer.connect()
-    console.log('📤 Sending message...')
-    await producer.send({
-      topic: 'test-topic',
-      messages: [
-        { value: '¡hello world! ' + new Date().toISOString() },
-        { value: JSON.stringify({ id: 1, nombre: 'Prueba', timestamp: new Date() }) }
-      ],
-    })
+    console.log('📤 Sending message...'),
+      await producer.sendBatch({ topicMessages })
     console.log('✅ Message sent')
     await producer.disconnect()
 

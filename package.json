@@ -23,6 +23,7 @@
     "@ai-sdk/react": "3.0.0-beta.105",
     "ai": "6.0.0-beta.105",
     "dotenv": "^17.2.3",
-    "streamdown": "^1.6.7"
+    "streamdown": "^1.6.7",
+    "zod": "^4.1.13"
   }
 }
