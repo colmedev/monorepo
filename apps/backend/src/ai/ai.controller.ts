@@ -3,6 +3,8 @@ import type { Response } from 'express';
 import { streamText, convertToModelMessages, type UIMessage, pipeAgentUIStreamToResponse } from 'ai';
 import { OrchestadorAgent } from 'src/agents/OrchestadorAgent';
 import { Kafka } from 'kafkajs';
+import { ReviewAgentModule } from 'src/agents/reviewAgent/review-agent.module';
+import { startReviewAgent } from 'src/agents/reviewAgent';
 
 
 @Controller('ai')
